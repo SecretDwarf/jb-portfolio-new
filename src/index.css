@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  font-family: "Press Start 2P", cursive;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* logo */
+.logo-container {
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: #1589ff;
+}
+
+.logo-image {
+  width: 100px;
+  height: 100px;
+}
+
+/* home */
+.canvascontainer {
+  max-width: 100%;
+  max-height: 100%;
+  z-index: -1;
+}
+
+.Home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vh;
+  height: 100vh;
+}
+
+.main-info {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  color: #1589ff;
+  text-align: center;
+  z-index: 3;
+}
+
+.main-text {
+  border-bottom: 5px solid #1589ff;
+  margin-bottom: 20px;
+  max-width: 80%;
+}
+
+h1 {
+  font-size: 6vh;
+  letter-spacing: 3px;
+  padding: 0 10px;
+}
+
+.main-info span {
+  width: max-content;
+}
+
+h1,
+h2,
+h3,
+span,
+#nav-button {
+  color: #1589ff;
+  background: none;
+}
+
+.buttons {
+  font-size: 1.8vh;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.buttons #nav-button {
+  z-index: 3;
+  margin: 0px 25px;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+canvas {
+  background-color: black;
+  z-index: -1;
+}
+
+/* 8 bit borders */
+.lvl1 {
+  box-shadow: 16px 0 black, -16px 0 black, 0 -16px black, 0 16px black, 4px 0 0 8px black, -4px 0 0 8px black, 0 -4px 0 8px black, 0 4px 0 8px black, 20px 0 #1589ff, -20px 0 #1589ff, 0 -20px #1589ff, 0 20px #1589ff, 0 0 0 12px #1589ff, 0 8px 0 8px #1589ff, 0 -8px 0 8px #1589ff, 8px 0 0 8px #1589ff, -8px 0 0 8px #1589ff;
+  margin: 20px auto;
+}
+
+.lvl2 {
+  box-shadow: 4px 0 black, -4px 0 black, 0 -4px black, 0 4px black, 8px 0 #1589ff, -8px 0 #1589ff, 0 -8px #1589ff, 0 8px #1589ff, 0 0 0 4px #1589ff;
+  margin: 8px auto;
+}
+
+.lvl3 {
+  box-shadow: 4px 0 black, -4px 0 black, 0 -4px black, 0 4px black, 8px 0 black, -8px 0 black, 0 -8px black, 0 8px black, 0 0 0 4px black, 12px 0 #1589ff, -12px 0 #1589ff, 0 12px #1589ff, 0 -12px #1589ff, 0 -4px 0 4px #1589ff, 0 4px 0 4px #1589ff, 4px 0 0 4px #1589ff, -4px 0 0 4px #1589ff;
+  margin: 12px auto;
+}
+
+.lvl4 {
+  box-shadow: 4px 0 black, -4px 0 black, 0 -4px black, 0 4px black, 8px 0 black, -8px 0 black, 0 -8px black, 0 8px black, 0 0 0 4px black, 12px 0 black, -12px 0 black, 0 12px black, 0 -12px black, 0 -4px 0 4px black, 0 4px 0 4px black, 4px 0 0 4px black, -4px 0 0 4px black, 16px 0 #1589ff, -16px 0 #1589ff, 0 -16px #1589ff, 0 16px #1589ff, 8px 0 0 4px #1589ff, -8px 0 0 4px #1589ff, 0 8px 0 4px #1589ff, 0 -8px 0 4px #1589ff, 0 0 0 8px #1589ff;
+  margin: 16px auto;
+}
+
+.other {
+  box-shadow: 4px 0 #1589ff, -4px 0 #1589ff, 0 -4px #1589ff, 0 4px #1589ff;
+  margin: 4px auto;
+}
+/* Contact Page */
+
+.contact-page{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+
+.contact-container {
+  max-width: 80%;
+}
+
+.contact-container h1 {
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 10%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-submit {
+  width: 100%;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid lightgray;
+  background-color: black;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-input-name::placeholder {
+  color: red;
+}
+
+.contact-input-email::placeholder {
+  color: blue;
+}
+
+.contact-input-message::placeholder {
+  color: green;
+}
+
+
+/* Resume */
+
+.resume {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.resume a {
+  font-size: 30vh;
+  z-index: 3;
+  padding: 2px;
+  color: #ff1615;
+  border: 5px solid #ff1615;
+}
+
+.resume h1 {
+  color: #1589ff;
+  position: relative;
+  padding: 2px;
+  z-index: 5;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  z-index: 1;
+}
+
+.container > div {
+  flex-basis: 2vw; 
+  height: 2vw; 
+  background-color: black;
+  transition: background-color 0.3s;
+  margin: 0.2vw;
+}
+
+.container > div:hover {
+  background-color: #222;
+}
+
+#clickMe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60%;
+  cursor: pointer;
+  animation: clickMeAnimation 5s infinite;
+  transition: opacity 1s ease-in-out;
+  z-index: 99999999;
+  background: #1589ff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#clickMe:hover {
+  /* animation-play-state: paused; */
+  top: 70%;
+  left: 30%;
+}
+
+@keyframes clickMeAnimation {
+  0% {
+      top: 50%;
+      left: 50%;
+  }
+
+  25% {
+      top: 20%;
+      left: 80%;
+  }
+
+  50% {
+      top: 80%;
+      left: 80%;
+  }
+
+  75% {
+      top: 80%;
+      left: 20%;
+  }
+
+  100% {
+      top: 20%;
+      left: 20%;
+  }
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
+/* portfolio  */
+
+.portfolio-container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+/* 404 page */
+.NotFound{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notFound-text {
+  margin-top: 0%;
+}
+.directions{
+  padding: 10px;
+  color:aliceblue;
+  display: flex;
+  align-items: center;
+  font-size: 3vh;
+  justify-content: center;
+}
+
+.linkContainer{
+  flex-direction: row;
+}
+
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  
+  /* .home {
+    height: auto;
+    padding: 20px;
+    justify-content: flex-start;
+  } */
+
+  .main{
+    padding-top: 20%;
+  }
+
+  /* h1 {
+    font-size: 4vh;
+  } */
+
+  .buttons {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .buttons #nav-button {
+    width: 75px;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+.logo-container {
+  margin-top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.belowLogo {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.notFound-text{
+  line-height: 13px;
+  margin-top: -10px;
+}
+
+.clickme{
+  display: none;
+}
+
+}
