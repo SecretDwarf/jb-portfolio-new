@@ -308,10 +308,15 @@ canvas {
 .NotFound{
   display: flex;
   align-items: center;
+  background: black;
   justify-content: center;
 }
 
 .notFound-text {
+  width: 100vh;
+  height: 100vh;
+  color: gray;
+  background: url("https://media0.giphy.com/media/oW7cXqaVmt5EKQ48FQ/giphy.gif?cid=ecf05e47lfblkwsvlvpqycsafmgti9fy7td2hfqqhgutb24n&ep=v1_gifs_search&rid=giphy.gif&ct=g");
   margin-top: 0%;
 }
 .directions{
