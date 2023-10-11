@@ -354,7 +354,7 @@ canvas {
   }
   
   .buttons #nav-button {
-    width: 75px;
+    width: 80px;
     margin: 20px;
   }
 
@@ -364,7 +364,7 @@ canvas {
 
 .main-text {
   font-size: 60%;
-  padding-top: 50%;
+  padding-top: 55%;
   text-align: center;
 }
 
