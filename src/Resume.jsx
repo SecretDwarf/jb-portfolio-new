@@ -9,7 +9,7 @@ import { faFilePdf } from '@fortawesome/free-regular-svg-icons';
 export default function Resume() {
 
   return (
-    <main className="main-resume">
+    <main>
       <div className="logo-container">
         <a href="/">
           <img src={logo} alt="Logo" className="logo-image" />
