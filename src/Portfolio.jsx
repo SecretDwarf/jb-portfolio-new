@@ -1,82 +1,63 @@
-import * as React from 'react';
+import * as React from "react";
 import { Fade } from "react-awesome-reveal";
-import Card from '@mui/material/Card';
-import logo from './assets/JB.png';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import CssBaseline from '@mui/material/CssBaseline';
-import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import Card from "@mui/material/Card";
+import logo from "./assets/JB.png";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import CssBaseline from "@mui/material/CssBaseline";
+import Grid from "@mui/material/Grid";
+import Stack from "@mui/material/Stack";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const cardData = [
   {
-    name: 'Project 1',
-    description: 'Description of Project 1',
+    imglink: "https://source.unsplash.com/random?portfolio",
+    name: "Sneeke",
+    description: "Sneeke is an award-winning game that I built with my friend Warren Hewlett at HackUSU. We placed first in our division largely because of our randomly generated maze.",
+    ghLink: "https://github.com/SecretDwarf/sneeke",
   },
   {
-    name: 'Project 2',
-    description: 'Description of Project 2',
+    imglink: "https://source.unsplash.com/random?portfolio",
+    name: "untitled",
+    description: "This is an awesome example project",
+    ghLink: "https://github.com/SecretDwarf/",
   },
   {
-    name: 'Project 1',
-    description: 'Description of Project 1',
+    imglink: "https://source.unsplash.com/random?portfolio",
+    name: "untitled",
+    description: "This is an awesome example project",
+    ghLink: "https://github.com/SecretDwarf/",
   },
   {
-    name: 'Project 2',
-    description: 'Description of Project 2',
+    imglink: "https://source.unsplash.com/random?portfolio",
+    name: "untitled",
+    description: "This is an awesome example project",
+    ghLink: "https://github.com/SecretDwarf/",
   },
   {
-    name: 'Project 1',
-    description: 'Description of Project 1',
+    imglink: "https://source.unsplash.com/random?portfolio",
+    name: "untitled",
+    description: "This is an awesome example project",
+    ghLink: "https://github.com/SecretDwarf/",
   },
   {
-    name: 'Project 2',
-    description: 'Description of Project 2',
+    imglink: "https://source.unsplash.com/random?portfolio",
+    name: "untitled",
+    description: "This is an awesome example project",
+    ghLink: "https://github.com/SecretDwarf/",
   },
-  {
-    name: 'Project 1',
-    description: 'Description of Project 1',
-  },
-  {
-    name: 'Project 2',
-    description: 'Description of Project 2',
-  },
-  {
-    name: 'Project 1',
-    description: 'Description of Project 1',
-  },
-  {
-    name: 'Project 2',
-    description: 'Description of Project 2',
-  },
-  {
-    name: 'Project 1',
-    description: 'Description of Project 1',
-  },
-  {
-    name: 'Project 2',
-    description: 'Description of Project 2',
-  },
-  {
-    name: 'Project 1',
-    description: 'Description of Project 1',
-  },
-  {
-    name: 'Project 2',
-    description: 'Description of Project 2',
-  }
+  
 ];
 
 const darkTheme = createTheme({
   palette: {
-    mode: 'dark',
+    mode: "dark",
   },
 });
 
@@ -90,11 +71,11 @@ export default function Portfolio() {
             <img src={logo} alt="Logo" className="logo-image" />
           </a>
         </div>
-        <div className='belowLogo'></div>
+        <div className="belowLogo"></div>
         {/* Hero unit */}
         <Box
           sx={{
-            bgcolor: 'background.paper',
+            bgcolor: "background.paper",
             pt: 3,
             pb: 3,
           }}
@@ -128,27 +109,27 @@ export default function Portfolio() {
             {cardData.map((card, index) => (
               <Grid item key={index} xs={12} sm={6} md={4}>
                 <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                  sx={{ height: "100%", display: "flex", flexDirection: "column" }}
                 >
                   <CardMedia
                     component="div"
                     sx={{
                       // 16:9
-                      pt: '56.25%',
+                      pt: "56.25%",
                     }}
-                    image="https://source.unsplash.com/random?portfolio"
+                    image= {card.imglink}
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      {card.name} {/* Render the project name from the card data */}
+                      {card.name} 
                     </Typography>
                     <Typography>
-                      {card.description} {/* Render the project description from the card data */}
+                      {card.description}
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                      <FontAwesomeIcon icon={faGithub} style={{ fontSize: '30px' }} />
+                    <a href={card.ghLink} target="_blank" rel="noopener noreferrer">
+                      <FontAwesomeIcon icon={faGithub} style={{ fontSize: "30px" }} />
                     </a>
                   </CardActions>
                 </Card>

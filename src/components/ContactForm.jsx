@@ -10,7 +10,7 @@ export default function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    toast('Email sent')
+    toast('Message sent')
     // Your EmailJS configuration
     const serviceId = 'service_ngdq8ip';
     const templateId = 'template_etzkr3j';
