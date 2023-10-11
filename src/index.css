@@ -389,7 +389,7 @@ canvas {
   margin-top: -10px;
 }
 
-.clickme, .resume-animation-container{
+.clickme {
   display: none;
 }
 
