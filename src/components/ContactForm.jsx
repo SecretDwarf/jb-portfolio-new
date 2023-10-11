@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import toast from 'react-hot-toast';
+import { Toaster, toast}  from 'sonner';
 
 export default function ContactForm() {
   const [name, setName] = useState('');
@@ -10,13 +10,7 @@ export default function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    toast(
-      "Your message has been sent\n If your email was valid a confirmation has been sent",
-      {
-        duration: 6000,
-      }
-    );
-    
+    toast('Email sent')
     // Your EmailJS configuration
     const serviceId = 'service_ngdq8ip';
     const templateId = 'template_etzkr3j';
@@ -50,6 +44,7 @@ export default function ContactForm() {
     
   return (
     <main>
+        <Toaster position="top-center" />
         <form onSubmit={handleSubmit} className="contact-form">
         <input
             type="text"
