@@ -30,7 +30,7 @@ class ResumeAnimation extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="resume-animation-container">
         {this.createDiv().map((i, key) => {
           return <div key={key} onMouseEnter={this.changeColor}></div>;
         })}
