@@ -25,6 +25,7 @@ class ResumeAnimation extends React.Component {
     for (let i = 0; i < 2000; i++) {
       divArray.push(i);
     }
+    event.target.style.backgroundColor = '#000';
     return divArray;
   }
 
