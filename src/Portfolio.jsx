@@ -49,7 +49,7 @@ const cardData = [
   {
     imglink: "https://source.unsplash.com/random?portfolio",
     name: "Independet Smoothie company",
-    description: "I extended this class assignment to include responsive styles and a Javascript order form that saves the user orders with cookies. This project is live at https://secretdwarf.github.io/wdd230/Final/Term_Project/fresh.html",
+    description: " This project is live. The link is in a readme in the repository. I extended this class assignment to include responsive styles and to include javascript that counts the number of orders across sessions",
     ghLink: "https://github.com/SecretDwarf/wdd230/tree/main/Final/Term_Project",
   },
   
@@ -91,7 +91,7 @@ export default function Portfolio() {
               Project Portfolio
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              Images comming soon. I still need to pull all of these projects to my new laptop.
+              Images comming soon. I still need to pull all of these projects to my new laptop. If you would like to view my source code just click the Github icon on each card.
             </Typography>
             <Stack
               sx={{ pt: 4 }}

@@ -358,7 +358,7 @@ canvas {
   }
   
   .buttons #nav-button {
-    width: 95px;
+    width: 150px;
     margin: 20px;
   }
 
@@ -372,7 +372,7 @@ canvas {
   text-align: center;
 }
 .buttons #nav-button {
-  width: 100px;
+  width: 150px;
   margin: 20px;
 }
 
