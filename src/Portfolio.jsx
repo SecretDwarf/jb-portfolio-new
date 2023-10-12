@@ -24,9 +24,9 @@ const cardData = [
   },
   {
     imglink: "https://source.unsplash.com/random?portfolio",
-    name: "untitled",
-    description: "This is an awesome example project",
-    ghLink: "https://github.com/SecretDwarf/",
+    name: "BOHS Buisness Proffesionals of America Project site",
+    description: "I was team lead on this project that made it clear to nationals. We currently rank sixth out of every chapter in America. This site is live at https://bohs-bpa-2022-website-design-team.github.io/BOHS-BPA-2022-Website-Design-Team/",
+    ghLink: "https://github.com/BOHS-BPA-2022-Website-Design-Team/BOHS-BPA-2022-Website-Design-Team",
   },
   {
     imglink: "https://source.unsplash.com/random?portfolio",
@@ -36,21 +36,21 @@ const cardData = [
   },
   {
     imglink: "https://source.unsplash.com/random?portfolio",
-    name: "untitled",
-    description: "This is an awesome example project",
+    name: "Commisioned National Youth Leadership Training: Cedar Badge Site",
+    description: "I built this page for NYLT while I was voulunteering as a Trek Guide. A branch of this site is live at https://secretdwarf.github.io/Final-Crew-Anthony-Page/",
     ghLink: "https://github.com/SecretDwarf/",
   },
   {
     imglink: "https://source.unsplash.com/random?portfolio",
-    name: "untitled",
-    description: "This is an awesome example project",
-    ghLink: "https://github.com/SecretDwarf/",
+    name: "LlammaAdventure",
+    description: "I was team lead on this 3 month project to make a piixel art unity game. We were able to remix Donkey Kong, Space Invaders, Tower Defence, and Asteroids into a single storyline.",
+    ghLink: "https://github.com/dhodgdon/TheGameIsOver",
   },
   {
     imglink: "https://source.unsplash.com/random?portfolio",
-    name: "untitled",
-    description: "This is an awesome example project",
-    ghLink: "https://github.com/SecretDwarf/",
+    name: "Independet Smoothie company",
+    description: "I extended this class assignment to include responsive styles and a Javascript order form that saves the user orders with cookies. This project is live at https://secretdwarf.github.io/wdd230/Final/Term_Project/fresh.html",
+    ghLink: "https://github.com/SecretDwarf/wdd230/tree/main/Final/Term_Project",
   },
   
 ];
@@ -88,10 +88,10 @@ export default function Portfolio() {
               color="text.primary"
               gutterBottom
             >
-              Portfolio layout
+              Project Portfolio
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              Inspiring undecided desciption
+              Images comming soon. I still need to pull all of these projects to my new laptop.
             </Typography>
             <Stack
               sx={{ pt: 4 }}

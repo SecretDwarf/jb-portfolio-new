@@ -19,7 +19,8 @@ export default function Home() {
       </div>
         <section className="main-info">
           <div className="main-text">
-            <h1>JACOB BRIGGS</h1>
+            <h1>JACOB</h1>
+            <h1>BRIGGS</h1>
             <span style={{ fontSize: '2em' }}>
               <TypeAnimation
                 sequence={[

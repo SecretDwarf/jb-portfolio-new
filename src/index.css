@@ -358,7 +358,7 @@ canvas {
   }
   
   .buttons #nav-button {
-    width: 85px;
+    width: 95px;
     margin: 20px;
   }
 
@@ -370,6 +370,10 @@ canvas {
   font-size: 60%;
   padding-top: 55%;
   text-align: center;
+}
+.buttons #nav-button {
+  width: 100px;
+  margin: 20px;
 }
 
 .logo-container {

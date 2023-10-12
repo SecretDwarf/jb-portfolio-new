@@ -29,13 +29,16 @@ class ResumeAnimation extends React.Component {
   }
 
   render() {
+    if (window.innerWidth > 500) {
     return (
-      <div className="container">
-        {this.createDiv().map((i, key) => {
-          return <div key={key} onMouseEnter={this.changeColor}></div>;
-        })}
-      </div>
+        <div className="container">
+          {this.createDiv().map((i, key) => {
+            return <div key={key} onMouseEnter={this.changeColor}></div>;
+          })}
+        </div>
+      
     );
+    }
   }
 }
 
