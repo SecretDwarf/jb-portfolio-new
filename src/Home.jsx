@@ -24,11 +24,14 @@ export default function Home() {
             <span style={{ fontSize: '2em' }}>
               <TypeAnimation
                 sequence={[
-                  'Web Development',
+                  'Web Developer',
                   1000,
-                  'Game Development',
+                  'Game Developer',
                   1000,
                   'Servant Leader',
+                  'Software Design',
+                  1000,
+                  'UI Design',
                   1000,
                   'Collaborator',
                   1000,
