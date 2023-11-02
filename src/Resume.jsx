@@ -2,14 +2,14 @@ import React from 'react';
 import ResumeAnimation from './components/ResumeAnimation';
 import ResumeAnimation2 from './components/ResumeAnimation2';
 import logo from './assets/JB.png';
-import resume from './assets/Resume.pdf'
+import resume from './assets/Jacob Briggs Resume PDF.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf } from '@fortawesome/free-regular-svg-icons';
 
 export default function Resume() {
 
   return (
-    <main>
+    <main className='main-resume'>
       <div className="logo-container">
         <a href="/">
           <img src={logo} alt="Logo" className="logo-image" />

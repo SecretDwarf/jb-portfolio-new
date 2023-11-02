@@ -30,8 +30,8 @@ const cardData = [
   },
   {
     imglink: "https://source.unsplash.com/random?portfolio",
-    name: "untitled",
-    description: "This is an awesome example project",
+    name: "Noteo",
+    description: "This is an music education game I made to help people learn how to read music.",
     ghLink: "https://github.com/SecretDwarf/",
   },
   {
@@ -48,7 +48,7 @@ const cardData = [
   },
   {
     imglink: "https://source.unsplash.com/random?portfolio",
-    name: "Independet Smoothie company",
+    name: "Independent Smoothie company",
     description: " This project is live. The link is in a readme in the repository. I extended this class assignment to include responsive styles and to include javascript that counts the number of orders across sessions",
     ghLink: "https://github.com/SecretDwarf/wdd230/tree/main/Final/Term_Project",
   },
@@ -65,7 +65,7 @@ export default function Portfolio() {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-      <main>
+      <main className="main-portfolio">
         <div className="logo-container">
           <a href="/">
             <img src={logo} alt="Logo" className="logo-image" />
