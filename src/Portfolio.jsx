@@ -31,7 +31,7 @@ const cardData = [
   {
     imglink: "https://source.unsplash.com/random?portfolio",
     name: "Noteo",
-    description: "This is an music education game I made to help people learn how to read music.",
+    description: "This is an music education game I'm developing to help people learn how to read music. The game isn't published yet but you can check my github for updates.",
     ghLink: "https://github.com/SecretDwarf/",
   },
   {
