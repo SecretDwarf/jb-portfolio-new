@@ -72,7 +72,6 @@ h3,
 span,
 #nav-button {
   color: #1589ff;
-  background: black;
 }
 
 .buttons {
@@ -203,6 +202,7 @@ canvas {
   z-index: 1;
   text-align: center;
   overflow: hidden;
+  max-width: 99%;
 }
 
 .resume a {
