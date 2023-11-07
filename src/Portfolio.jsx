@@ -24,7 +24,7 @@ const cardData = [
   },
   {
     imglink: "https://source.unsplash.com/random?portfolio",
-    name: "BOHS Buisness Proffesionals of America Project site",
+    name: "BOHS Business Proffesionals of America Project site",
     description: "I was team lead on this project that made it clear to nationals. We currently rank sixth out of every chapter in America. This site is live at https://bohs-bpa-2022-website-design-team.github.io/BOHS-BPA-2022-Website-Design-Team/",
     ghLink: "https://github.com/BOHS-BPA-2022-Website-Design-Team/BOHS-BPA-2022-Website-Design-Team",
   },
