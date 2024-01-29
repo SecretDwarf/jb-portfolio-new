@@ -120,7 +120,7 @@ export default function Portfolio() {
                     image= {card.imglink}
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                    <Typography className="cardName" gutterBottom variant="h5" component="h2">
                       {card.name} 
                     </Typography>
                     <Typography>
@@ -129,7 +129,7 @@ export default function Portfolio() {
                   </CardContent>
                   <CardActions>
                     <a href={card.ghLink} target="_blank" rel="noopener noreferrer">
-                      <FontAwesomeIcon icon={faGithub} style={{ fontSize: "30px" }} />
+                      <FontAwesomeIcon className="GithubIcons" icon={faGithub} style={{ fontSize: "30px" }} />
                     </a>
                   </CardActions>
                 </Card>

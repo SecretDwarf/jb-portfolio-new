@@ -152,6 +152,8 @@ canvas {
 
 .contact-submit {
   width: 100%;
+  padding: 10px 0px;
+  font-size: 25px;
 }
 
 .contact-form input[type="text"],
@@ -171,15 +173,15 @@ canvas {
 }
 
 .contact-input-name::placeholder {
-  color: red;
+  color: #FA602F;
 }
 
 .contact-input-email::placeholder {
-  color: blue;
+  color: #1589ff;
 }
 
 .contact-input-message::placeholder {
-  color: green;
+  color: #677A54;
 }
 
 
@@ -309,6 +311,14 @@ canvas {
   height: 100vh;
   color: white;
   overflow: hidden;
+}
+
+.cardName {
+  color: #1589ff;
+}
+
+.GithubIcons {
+  color: #1589ff;
 }
 /* 404 page */
 .NotFound{
