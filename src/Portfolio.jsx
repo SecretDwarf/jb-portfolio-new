@@ -25,31 +25,31 @@ const cardData = [
   {
     imglink: "https://source.unsplash.com/random?portfolio",
     name: "BOHS Business Proffesionals of America Project site",
-    description: "I was team lead on this project that made it clear to nationals. We currently rank sixth out of every chapter in America. This site is live at https://bohs-bpa-2022-website-design-team.github.io/BOHS-BPA-2022-Website-Design-Team/",
+    description: "I was team lead on this project that made it clear to nationals. We currently rank sixth out of every chapter in America.",
     ghLink: "https://github.com/BOHS-BPA-2022-Website-Design-Team/BOHS-BPA-2022-Website-Design-Team",
   },
   {
     imglink: "https://source.unsplash.com/random?portfolio",
     name: "Noteo",
-    description: "This is an music education game I'm developing to help people learn how to read music. The game isn't published yet but you can check my github for updates.",
+    description: "This is an music education game I'm developing to help people learn how to read music. Simply click the image above to visit the game.",
     ghLink: "https://github.com/SecretDwarf/",
   },
   {
     imglink: "https://source.unsplash.com/random?portfolio",
     name: "Commisioned National Youth Leadership Training: Cedar Badge Site",
-    description: "I built this page for NYLT while I was voulunteering as a Trek Guide. A branch of this site is live at https://secretdwarf.github.io/Final-Crew-Anthony-Page/",
+    description: "I built this Crew page for NYLT while I was voulunteering as a Trek Guide.",
     ghLink: "https://github.com/SecretDwarf/",
   },
   {
     imglink: "https://source.unsplash.com/random?portfolio",
     name: "LlammaAdventure",
-    description: "I was team lead on this 3 month project to make a piixel art unity game. We were able to remix Donkey Kong, Space Invaders, Tower Defence, and Asteroids into a single storyline.",
+    description: "I was team lead on this 3 month project to make a piixel art unity game. We were able to remix Donkey Kong, Space Invaders, Tower Defence, and Asteroids into a single storyline. Simply click the image above to visit the game.",
     ghLink: "https://github.com/dhodgdon/TheGameIsOver",
   },
   {
     imglink: "https://source.unsplash.com/random?portfolio",
     name: "Independent Smoothie company",
-    description: " This project is live. The link is in a readme in the repository. I extended this class assignment to include responsive styles and to include javascript that counts the number of orders across sessions",
+    description: " This project is live. I extended this class assignment to include responsive styles and to include javascript that counts the number of orders across sessions",
     ghLink: "https://github.com/SecretDwarf/wdd230/tree/main/Final/Term_Project",
   },
   
@@ -91,7 +91,7 @@ export default function Portfolio() {
               Project Portfolio
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              Images comming soon. I still need to pull all of these projects to my new laptop. If you would like to view my source code just click the Github icon on each card.
+              Thanks for dropping in! To preview or visit my projects simply hover over the image on each card If you would like to view my source code just click the Github icon on each card.
             </Typography>
             <Stack
               sx={{ pt: 4 }}
@@ -127,9 +127,9 @@ export default function Portfolio() {
                       {card.description}
                     </Typography>
                   </CardContent>
-                  <CardActions>
+                  <CardActions className="GithubIconContainer">
                     <a href={card.ghLink} target="_blank" rel="noopener noreferrer">
-                      <FontAwesomeIcon className="GithubIcons" icon={faGithub} style={{ fontSize: "30px" }} />
+                      <FontAwesomeIcon className="GithubIcon" icon={faGithub}/>
                     </a>
                   </CardActions>
                 </Card>

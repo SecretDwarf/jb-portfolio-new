@@ -317,9 +317,19 @@ canvas {
   color: #1589ff;
 }
 
-.GithubIcons {
-  color: #1589ff;
+.GithubIconContainer {
+  display: flex;
+  -webkit-box-align: end;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
 }
+
+.GithubIcon {
+  color: #1589ff;
+  font-size: 35px;
+}
+
 /* 404 page */
 .NotFound{
   display: flex;
