@@ -99,7 +99,7 @@ export default function Portfolio() {
               Project Portfolio
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              Thanks for dropping in! To preview or visit my projects simplyclick the image on each card If you would like to view my source code just click the Github icon on each card.
+              Thanks for dropping in! To preview or visit my projects simply click the image on each card If you would like to view my source code just click the Github icon on each card.
             </Typography>
             <Stack
               sx={{ pt: 4 }}
