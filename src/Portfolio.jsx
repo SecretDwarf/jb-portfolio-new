@@ -18,36 +18,42 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 const cardData = [
   {
     imglink: "https://source.unsplash.com/random?portfolio",
+    externalViewLink: "https://source.unsplash.com/random?portfolio",
     name: "Sneeke",
     description: "Sneeke is an award-winning game that I built with my friend Warren Hewlett at HackUSU. We placed first in our division largely because of our randomly generated maze.",
     ghLink: "https://github.com/SecretDwarf/sneeke",
   },
   {
     imglink: "https://source.unsplash.com/random?portfolio",
+    externalViewLink: "https://source.unsplash.com/random?portfolio",
     name: "BOHS Business Proffesionals of America Project site",
     description: "I was team lead on this project that made it clear to nationals. We currently rank sixth out of every chapter in America.",
     ghLink: "https://github.com/BOHS-BPA-2022-Website-Design-Team/BOHS-BPA-2022-Website-Design-Team",
   },
   {
     imglink: "https://source.unsplash.com/random?portfolio",
+    externalViewLink: "https://source.unsplash.com/random?portfolio",
     name: "Noteo",
-    description: "This is an music education game I'm developing to help people learn how to read music. Simply click the image above to visit the game.",
+    description: "This is an music education game I'm developing to help people learn how to read music.",
     ghLink: "https://github.com/SecretDwarf/",
   },
   {
     imglink: "https://source.unsplash.com/random?portfolio",
+    externalViewLink: "https://source.unsplash.com/random?portfolio",
     name: "Commisioned National Youth Leadership Training: Cedar Badge Site",
     description: "I built this Crew page for NYLT while I was voulunteering as a Trek Guide.",
     ghLink: "https://github.com/SecretDwarf/",
   },
   {
     imglink: "https://source.unsplash.com/random?portfolio",
+    externalViewLink: "https://source.unsplash.com/random?portfolio",
     name: "LlammaAdventure",
     description: "I was team lead on this 3 month project to make a piixel art unity game. We were able to remix Donkey Kong, Space Invaders, Tower Defence, and Asteroids into a single storyline. Simply click the image above to visit the game.",
     ghLink: "https://github.com/dhodgdon/TheGameIsOver",
   },
   {
     imglink: "https://source.unsplash.com/random?portfolio",
+    externalViewLink: "https://source.unsplash.com/random?portfolio",
     name: "Independent Smoothie company",
     description: " This project is live. I extended this class assignment to include responsive styles and to include javascript that counts the number of orders across sessions",
     ghLink: "https://github.com/SecretDwarf/wdd230/tree/main/Final/Term_Project",
@@ -63,6 +69,8 @@ const darkTheme = createTheme({
 
 export default function Portfolio() {
   return (
+    // <TetrisAnimation>
+
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <main className="main-portfolio">
@@ -91,7 +99,7 @@ export default function Portfolio() {
               Project Portfolio
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              Thanks for dropping in! To preview or visit my projects simply hover over the image on each card If you would like to view my source code just click the Github icon on each card.
+              Thanks for dropping in! To preview or visit my projects simplyclick the image on each card If you would like to view my source code just click the Github icon on each card.
             </Typography>
             <Stack
               sx={{ pt: 4 }}
@@ -109,21 +117,29 @@ export default function Portfolio() {
             {cardData.map((card, index) => (
               <Grid item key={index} xs={12} sm={6} md={4}>
                 <Card
+                  className="portfolioCard"
                   sx={{ height: "100%", display: "flex", flexDirection: "column" }}
                 >
-                  <CardMedia
-                    component="div"
-                    sx={{
-                      // 16:9
-                      pt: "56.25%",
-                    }}
-                    image= {card.imglink}
-                  />
-                  <CardContent sx={{ flexGrow: 1 }}>
+                  <a href={card.externalViewLink} target="_blank" rel="noopener noreferrer">
+                    <CardMedia
+                      className="portfolioCardImage"
+                      component="div"
+                      sx={{
+                        // 16:9
+                        pt: "56.25%",
+                      }}
+                      image= {card.imglink}
+                    />
+                    <div className="externalLinkContainer">
+                      {/* <span className="portfolioCardHoverText">Click to view live</span> */}
+                      <span className="portfolioCardHoverText">Coming Soon!</span>
+                    </div>
+                  </a>
+                  <CardContent className="portfolioCardContent" sx={{ flexGrow: 1 }}>
                     <Typography className="cardName" gutterBottom variant="h5" component="h2">
                       {card.name} 
                     </Typography>
-                    <Typography>
+                    <Typography className="cardDescription">
                       {card.description}
                     </Typography>
                   </CardContent>
