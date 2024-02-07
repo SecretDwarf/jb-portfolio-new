@@ -69,7 +69,6 @@ const darkTheme = createTheme({
 
 export default function Portfolio() {
   return (
-    // <TetrisAnimation>
 
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
