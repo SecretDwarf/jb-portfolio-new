@@ -127,7 +127,7 @@ canvas {
   align-items: center;
   justify-content: flex-start;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   color: white;
   overflow: hidden;
 }
@@ -183,7 +183,6 @@ canvas {
 .contact-input-message::placeholder {
   color: #677A54;
 }
-
 
 /* Resume */
 
@@ -377,9 +376,6 @@ canvas {
 .linkContainer{
   flex-direction: row;
 }
-
-/* Pong */
-
 
 
 /* Responsive Styles */

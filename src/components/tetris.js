@@ -1,38 +1,3 @@
-import React, { useEffect, useState } from 'react';
-
-export default function TetrisAnimation() {
-    const [tetrisInstances, setTetrisInstances] = useState([]);
-
-    useEffect(() => {
-        const createTetrisInstances = () => {
-            const width = window.innerWidth;
-            const boardDiv = 20 * Math.round(window.innerWidth / 20);
-            const numBoards = 2;
-            const spacePercentage = 40;
-            const totalSpace = (width * spacePercentage) / 100;
-            const bWidth = (boardDiv - totalSpace) / numBoards;
-            const spaceBetweenBoards = totalSpace / (numBoards - 1);
-            const instances = [];
-
-            for (let w = 0; w < numBoards; w++) {
-                const posX = 20 * Math.round((w * (bWidth + spaceBetweenBoards)) / 20);
-                instances.push(new Tetris(posX, 0, bWidth));
-            }
-
-            setTetrisInstances(instances);
-        };
-
-        createTetrisInstances();
-    }, []);
-
-    return (
-        <div>
-            {/* */}
-        </div>
-    );
-}
-// tetris code 
-
 var tetrominos = [{
     // box
     colors : ['rgb(59,84,165)', 'rgb(118,137,196)', 'rgb(79,111,182)'],
@@ -90,25 +55,18 @@ var tetrominos = [{
          [0, 0, 0, 0]]
     }];
 
-var Tetris = function(x,y,width,height){s
+var Tetris = function(x,y,width,height){
     this.posX = x || 0;
     this.posY = y || 0;
 
-    // Calculate total page height
-    var totalPageHeight = Math.max( document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
-
     this.width  = width || window.innerWidth;
-    this.height = height || totalPageHeight; // Use total page height
+    this.height = height || window.innerHeight;
 
     this.bgCanvas = document.createElement('canvas');
     this.fgCanvas = document.createElement('canvas');
 
     this.bgCanvas.width = this.fgCanvas.width = this.width;
     this.bgCanvas.height = this.fgCanvas.height = this.height;
-
-    // Set z-index of -5 for the canvases
-    this.bgCanvas.style.zIndex = -5;
-    this.fgCanvas.style.zIndex = -5;
 
     this.bgCtx = this.bgCanvas.getContext('2d');
     this.fgCtx = this.fgCanvas.getContext('2d');
@@ -118,11 +76,11 @@ var Tetris = function(x,y,width,height){s
 
     this.fgCanvas.style.left = this.posX + 'px';
     this.fgCanvas.style.top = this.posY + 'px';
-    
+  
     document.body.appendChild(this.bgCanvas);
     document.body.appendChild(this.fgCanvas);
     this.init();
-};    
+};
 
 Tetris.prototype.init = function(){
     this.curPiece = {
@@ -477,7 +435,7 @@ Tetris.prototype.newTetromino = function() {
 var width = window.innerWidth,
     boardDiv = 20 * Math.round(window.innerWidth / 20),
     numBoards = 2,
-    spacePercentage = 40, // Adjust the percentage of the screen width for the space between the boards
+    spacePercentage = 45, // Adjust the percentage of the screen width for the space between the boards
     totalSpace = (width * spacePercentage) / 100, // Calculating the total space based on the percentage of the screen width
     bWidth = (boardDiv - totalSpace) / numBoards,
     spaceBetweenBoards = totalSpace / (numBoards - 1),
@@ -487,5 +445,3 @@ for (var w = 0; w < numBoards; w++) {
     var posX = 20 * Math.round((w * (bWidth + spaceBetweenBoards)) / 20);
     tetrisInstances.push(new Tetris(posX, 0, bWidth));
 }
-
-

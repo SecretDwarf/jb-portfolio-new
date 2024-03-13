@@ -59,7 +59,7 @@ export default function ContactForm() {
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Your Email"
             className="contact-input contact-input-email"
-            />
+          />
         <textarea
             value={message}
             onChange={(e) => setMessage(e.target.value)}
